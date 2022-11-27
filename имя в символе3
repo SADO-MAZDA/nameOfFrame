@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Имя_в_рамке
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            string userChar;
+            string charString = "";
+            Console.Write("Ваше имя : ");
+            name = Console.ReadLine();
+            Console.Write("Ваш символ : ");
+            userChar = Console.ReadLine();
+            name = userChar + name + userChar;
+
+            for (int i = 0; i < name.Length;i++)  
+            {
+                 charString += userChar;
+            }
+
+            Console.WriteLine(charString);
+            Console.WriteLine(name);
+            Console.WriteLine(charString);
+            Console.ReadKey();
+        }
+    }
+}
